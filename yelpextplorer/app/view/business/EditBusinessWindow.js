@@ -9,6 +9,8 @@ Ext.define("YelpExtplorer.view.business.EditBusinessWindow", {
 	resizeable: false,
 	bodyPadding: 8,
 	modal: true,
+	stateful:true,
+	stateId:'editBusinessWindow',
 	listeners: {
 		show: {
 			scope: 'controller',

@@ -2,7 +2,9 @@ Ext.define('YelpExtplorer.view.main.MainController', {
     extend: 'Ext.app.ViewController',
 
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox',
+        'Ext.state.Manager',
+        'Ext.state.CookieProvider'
     ],
 
     alias: 'controller.main',
@@ -51,6 +53,7 @@ Ext.define('YelpExtplorer.view.main.MainController', {
         var me = this;
         vm.bind('{school}', this.clearBusiness, this);
         vm.bind('{school.id}', this.onSchoolIdChange, this);
+        Ext.state.Manager.setProvider(Ext.create('Ext.state.CookieProvider'));
     },
 
     clearBusiness: function() {
