@@ -1,0 +1,26 @@
+.businessesview {
+    height: 134px;
+    width: 108px;
+    margin: 4px;
+    float: left;
+    border: 4px solid #dddddd;
+}
+.businessesview img {
+    height: 100px;
+    width: 100px;
+}
+.businessesview figure {
+    margin: 0px;
+}
+.businessesview figcaption {
+    text-align: center;
+    font-size: 7pt;
+}
+.businessesview.over  {
+    border: 4px solid #999999;
+    background-color: #F5F6CE;
+}
+.businessesview.selected {
+    border: 4px solid black;
+    background-color: yellow;
+}
